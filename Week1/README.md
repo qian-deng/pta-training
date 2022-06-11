@@ -21,5 +21,6 @@ GitHub is an online hosting service for Git repositories. It is a web service th
 
 ## Readings
 
-- [Git and Github For Beginners](freecodecamp.org/news/git-and-github-for-beginners/)
+- [Git and Github For Beginners](https://www.freecodecamp.org/news/git-and-github-for-beginners)
+- [Git Simple Guide](https://rogerdudler.github.io/git-guide/)
 - [How to install Xcode command line tool](https://www.freecodecamp.org/news/install-xcode-command-line-tools/)
