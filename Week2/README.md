@@ -68,3 +68,9 @@ Write a script using Github pull request api to open a pull request.
 - Accept a remote development branch name
 - Open a pull request using the provided branch as the head branch and `master` as the base branch
 - Report any failures
+
+## Readings
+- [Home Simple Installation Guide](https://treehouse.github.io/installation-guides/mac/homebrew)
+- [Installing packages using pip and virtual environments](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/#installing-packages-using-pip-and-virtual-environments)
+- [Github Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
+- [Git Merge](https://www.atlassian.com/git/tutorials/using-branches/git-merge)
