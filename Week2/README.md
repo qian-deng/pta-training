@@ -61,6 +61,11 @@ To install a specific version `pip install reqeusts>=2.0.0,<3.0.0`
 
 ## Homework
 
+### Prepartion:
+
+- Create [github developer access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
+-
+
 Write a script using Github pull request api to open a pull request.
 
 ### Requirements
@@ -71,6 +76,7 @@ Write a script using Github pull request api to open a pull request.
 
 #### Bonus
 
+- Use [argparse](https://docs.python.org/3/library/argparse.html) to accept user input
 - Push a local branch to remote
 
 ## Readings
