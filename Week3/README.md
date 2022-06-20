@@ -62,6 +62,18 @@ This is also to demo how to create conflicts.
 
 The `=======` line is the "center" of the conflict. All the content between the center and the `<<<<<<<` HEAD line is content that exists in the current branch. Alternatively all content between the center and `>>>>>>>` _create-merge-conflict-2_ is content that is present in the merging branch.
 
+## Homework
+
+Write a script to merge one branch into another. Identify conflicts if exist and print conflict details.
+
+- User provides testing branch and merge branch
+- Check the existance of both
+- Check out to a temp branch from the testing branch
+- Merge merge branch
+- If there are conflicts, write conflict details into a new file
+- Push the temp branch to remote
+
 ## Readings
 
 - [git stash](https://www.atlassian.com/git/tutorials/saving-changes/git-stash)
+- [merge conflict](https://www.atlassian.com/git/tutorials/using-branches/merge-conflicts)
