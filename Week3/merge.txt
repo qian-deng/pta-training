@@ -1,0 +1,17 @@
+This is to demo how to create conflicts
+
+Conflict 1
+Bob adds this line
+Bob also adds this line
+Hello, this is Bob
+
+Conflict 2
+Chris removes one line below
+world
+
+Conflict 3
+Tom appends the last line
+this is the last line
+Tom appends another two lines
+last
+line
