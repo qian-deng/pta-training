@@ -85,3 +85,39 @@ Write a script using Github pull request api to open a pull request.
 - [Github Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
 - [Git Merge](https://www.atlassian.com/git/tutorials/using-branches/git-merge)
 - [pip requirement.txt usage](https://note.nkmk.me/en/python-pip-install-requirements/)
+
+
+Week 1
+Git 使用流程
+
+
+-------------
+使用虚拟环境创建新的Repo并推送至Github
+
+-------------
+
+创建新分并pull request支用于团队review
+
+-------------
+
+修改并测试问题
+
+------------
+Clone + Branch + Push 之后并未出现Pull Request
+
+
+------------
+继续测试
+
+------------
+成功上传整个文件但未有修改
+
+
+------------
+修改错误文件名
+
+------------
+忘记使用commit -m 导致错误
+
+------------
+错误来源： 未切换分支
