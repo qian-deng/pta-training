@@ -2,12 +2,15 @@ This is to demo how to create conflicts
 
 Conflict 1
 Bob adds this line
+Bob adds another line
+Hello, this is Bob
 
 Conflict 2
-Chris adds two lines below
+Chris removes one line below
 hello
-world
 
 Conflict 3
 Tom appends the last line
 this is the last line
+Tom appends another line
+this is the new last line
