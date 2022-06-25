@@ -1,9 +1,9 @@
-import json
 import requests
 
-def create_pull_request(project_name, repo_name, title, description, head_branch, base_branch, git_token):
+
+def create_pull_request(owner_name, repo_name, title, description, head_branch, base_branch, git_token):
     """Creates the pull request for the head_branch against the base_branch"""
-    git_pulls_api = f"https://github.com/api/v3/repos/{project_name}/{repo_name}/pulls"
+    git_pulls_api = f"https://api.github.com/repos/{owner_name}/{repo_name}/pulls"
     headers = {
         "Authorization": f"token {git_token}",
         "Content-Type": "application/json"
@@ -19,25 +19,25 @@ def create_pull_request(project_name, repo_name, title, description, head_branch
     r = requests.post(
         git_pulls_api,
         headers=headers,
-        data=payload)
+        json=payload)
 
     if not r.ok:
-        f"Request Failed: {r.reason}"
-    else:
-        f"Request Succeed:{r.request}"
+        print(f"Request Failed: {r.status_code} {r.reason}, {r.text}")
+        return
+    print(f"Request Succeed: new pull request url {r.json()['html_url']}")
 
 
 
 if __name__ == '__main__':
-    
+    head_branch = input("Please input the head_branch: ")
     create_pull_request(
-    "<qian-deng>", # project_name
-    "<pta-training>", # repo_name
-    "Test", # title
-    "New change", # description
-    input("Please input the head_branch"), # head_branch
-    "yibo/dev", # base_branch
-    "<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>", # git_token
+        "qian-deng", # owner_name
+        "pta-training", # repo_name
+        "Test", # title
+        "New change", # description
+        head_branch, # head_branch
+        "yibo/dev", # base_branch
+        "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", # git_token
     )
 
 
