@@ -19,7 +19,7 @@ def create_pull_request(project_name, repo_name, title, description, head_branch
     r = requests.post(
         git_pulls_api,
         headers=headers,
-        data=json.data(payload))
+        data=payload)
 
     if not r.ok:
         f"Request Failed: {r.reason}"
