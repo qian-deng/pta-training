@@ -59,6 +59,10 @@ To install a specific version `pip install reqeusts>=2.0.0,<3.0.0`
 
 [Create a pull request](https://docs.github.com/en/rest/pulls/pulls#create-a-pull-request)
 
+```
+curl -XPOST -H "Authorization: token <token>" https://api.github.com/repos/qian-deng/pta-training/pulls -d '{"title":"Amazing new feature","body":"Awesome changes!","head":"student/dev","base":"master"}'
+```
+
 ## Homework
 
 Write a script using Github pull request api to open a pull request.
@@ -69,14 +73,20 @@ Write a script using Github pull request api to open a pull request.
 
 ### Requirements
 
-- User inputs a remote development branch name
+- Accept a remote development branch name from user input
 - Open a pull request using the provided branch as the head branch and `master` as the base branch
 - Report any failures
+- Print the generated Pull Request html url
+
+Tips
+
+- use input() to take input from stdin
+- assume the remote branch exists
+- use try/catch to report failures
 
 #### Bonus
 
 - Use [argparse](https://docs.python.org/3/library/argparse.html) to accept user input
-- Push a local branch to remote
 
 ## Readings
 

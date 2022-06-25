@@ -66,14 +66,26 @@ The `=======` line is the "center" of the conflict. All the content between the 
 
 Write a script to merge one branch into another. Identify conflicts if exist and print conflict details.
 
-- User provides testing branch and merge branch
-- Check the existance of both
+- Accept testing branch and merge branch from user input
 - Check out to a temp branch from the testing branch
-- Merge merge branch
-- If there are conflicts, write conflict details into a new file
-- Push the temp branch to remote
+- Merge merge branch into the temp branch
+- If there are conflicts, output conflict details
+- If no merge conflicts, output "Merge succeeded!"
+
+Tips
+
+- Use [subprocess.run](https://docs.python.org/3/library/subprocess.html#subprocess.run) to call git commands, e.g. `git checkout`, `git merge`
+- You need to read conflicted file name from the returned `CompletedProcess.stderr` ([CompletedProcess](https://docs.python.org/3/library/subprocess.html#subprocess.CompletedProcess)) instacne from `subprocess.run`
+- Use [with open("filename")](https://www.geeksforgeeks.org/read-a-file-line-by-line-in-python/) to read a file line by line
+- You can use string match to find lines with conflict markers
+
+Bonus
+
+- Use regex to find lines with conflict markers
 
 ## Readings
 
 - [git stash](https://www.atlassian.com/git/tutorials/saving-changes/git-stash)
 - [merge conflict](https://www.atlassian.com/git/tutorials/using-branches/merge-conflicts)
+- [subprocess](https://docs.python.org/3/library/subprocess.html)
+- [python regular expression](https://docs.python.org/3/library/re.html)
