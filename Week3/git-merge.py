@@ -34,8 +34,7 @@ def autoMerge(workpath, repo_name, fromBranch, toBranch):
     branch_merge(repo, FROM_BRANCH, TO_BRANCH)
     print('end  merge <<< ' + repo_name + '\n')
 
-    git = repo.git
-    print("Remote Current Rev Parse:" + remoteVer)
+   
 
 
 def branch_merge(repo, from_branch, to_branch):
