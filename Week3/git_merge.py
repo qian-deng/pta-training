@@ -1,7 +1,6 @@
 import argparse
-from base64 import encode
-import subprocess
 import logging
+import subprocess
 import sys
 
 TEMP_BRANCH = "temp-merge"

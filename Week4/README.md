@@ -46,10 +46,19 @@ A regular expression (or RE) specifies a set of strings that matches it.
 `{m}` specifies that exactly m copies of the previous RE should be matched
 `\` either escapes special characters or signals a special sequence
 `[]` is used to indicate a set of characters, e.g. `[a-z]` matches any lowercase ASCII letter
+`|` `A|B`, where A and B can be arbitrary REs, creates a regular expression that will match either A or B.
 `\b` matches the empty string, but only at the beginning or end of a word, e.g. `foo\b` matches `foo`, `foo bar` but not `foobar`
 `\d` matches any Unicode decimal digit
 `\s` matches Unicode whitespace characters
 `\w` matches Unicode word characters
+
+### re.match
+
+If zero or more characters at **the beginning** of string match the regular expression pattern, return a corresponding match object. Return None if the string does not match the pattern.
+
+### re.search
+
+Scan through string looking for **the first location** where the regular expression pattern produces a match, and return a corresponding match object. Return None if no position in the string matches the pattern.
 
 To practice and test RE, [regexr.com](https://regexr.com/) is very helpful
 
@@ -57,7 +66,7 @@ To practice and test RE, [regexr.com](https://regexr.com/) is very helpful
 
 Write a script to find conflicts in a file and print the authors who made the conflicts
 
-- A file with conflicts is provied
+- A file with conflicts `merge.txt` is provided
 - Read the file line by line and record line numbers with conflict markers
 - Use `git blame` to get the authors of lines with conflicts
 - Print conflicting line numbers and related author names
