@@ -1,0 +1,30 @@
+This is to demo how to create conflicts
+
+Conflict 1
+Bob adds this line
+<<<<<<< HEAD
+Bob adds another line
+=======
+Bob also adds this line
+>>>>>>> create-merge-conflict-2
+Hello, this is Bob
+
+Conflict 2
+Chris removes one line below
+<<<<<<< HEAD
+hello
+=======
+world
+>>>>>>> create-merge-conflict-2
+
+Conflict 3
+Tom appends the last line
+this is the last line
+<<<<<<< HEAD
+Tom appends another line
+this is the new last line
+=======
+Tom appends another two lines
+last
+line
+>>>>>>> create-merge-conflict-2
