@@ -1,2 +1,12 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
 .vscode
 env
+=======
+.vscode
+env
+>>>>>>> remotes/origin/create-merge-conflict-2
+=======
+.vscode
+env
+>>>>>>> remotes/origin/create-merge-conflict-1
