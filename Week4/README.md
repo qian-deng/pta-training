@@ -38,18 +38,31 @@ Date:   Mon Jun 20 16:47:35 2022 -0700
 
 A regular expression (or RE) specifies a set of strings that matches it.
 `.` matches any character except a newline
+
 `^` matches the start of the string
+
 `$` matches the end of the string or just before the newline at the end of the string
+
 `*` matches 0 or more repetitions of the preceding RE, as many repetitions as are possible, e.g. `ab*` matches `a`, `ab`, `abbb` and etc.
+
 `+` matches 1 or more repetitions of the preceding RE, e.g. `ab+` matches `ab` but does not match `a`.
+
 `?` matches 0 or 1 repetitions of the preceding RE, e.g. `ab?` matches either `a` or `ab`
+
 `{m}` specifies that exactly m copies of the previous RE should be matched
+
 `\` either escapes special characters or signals a special sequence
+
 `[]` is used to indicate a set of characters, e.g. `[a-z]` matches any lowercase ASCII letter
+
 `|` `A|B`, where A and B can be arbitrary REs, creates a regular expression that will match either A or B.
+
 `\b` matches the empty string, but only at the beginning or end of a word, e.g. `foo\b` matches `foo`, `foo bar` but not `foobar`
+
 `\d` matches any Unicode decimal digit
+
 `\s` matches Unicode whitespace characters
+
 `\w` matches Unicode word characters
 
 ### re.match
