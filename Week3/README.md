@@ -74,18 +74,12 @@ Write a script to merge one branch into another. Identify conflicts if exist and
 
 Tips
 
-- Use [subprocess.run](https://docs.python.org/3/library/subprocess.html#subprocess.run) to call git commands, e.g. `git checkout`, `git merge`
-- You need to read conflicted file name from the returned `CompletedProcess.stderr` ([CompletedProcess](https://docs.python.org/3/library/subprocess.html#subprocess.CompletedProcess)) instacne from `subprocess.run`
-- Use [with open("filename")](https://www.geeksforgeeks.org/read-a-file-line-by-line-in-python/) to read a file line by line
-- You can use string match to find lines with conflict markers
-
-Bonus
-
-- Use regex to find lines with conflict markers
+- Use [subprocess.check_call](https://docs.python.org/3/library/subprocess.html#subprocess.check_call) or [subprocess.check_output](https://docs.python.org/3/library/subprocess.html#subprocess.check_output) to call git commands, e.g. `git checkout`, `git merge`
+- You need to read conflicted file names with `git diff` and read more details with `git status`
+- Use [with open("filename", "w")](https://www.pythontutorial.net/python-basics/python-write-text-file/) to write to a file
 
 ## Readings
 
 - [git stash](https://www.atlassian.com/git/tutorials/saving-changes/git-stash)
 - [merge conflict](https://www.atlassian.com/git/tutorials/using-branches/merge-conflicts)
 - [subprocess](https://docs.python.org/3/library/subprocess.html)
-- [python regular expression](https://docs.python.org/3/library/re.html)
